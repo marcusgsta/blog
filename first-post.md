@@ -1,4 +1,4 @@
-# First Post
+# 2019-11-27 First Post
 
 So, I decided to start a blog where I share things I learn about web design - and development.
 Since I haven't yet decided on how I would publish the blog, I created a Git Repo and a markdown-file.
