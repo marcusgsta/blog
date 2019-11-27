@@ -1,2 +1,2 @@
 # Blog
-Blogging about web development, CSS, JavaScript, React etc.
+Blogging about web design and development, CSS, JavaScript, React etc.
