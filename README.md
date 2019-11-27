@@ -1,2 +1,2 @@
-# Blog
-Blogging about web design and development, CSS, JavaScript, React etc.
+# Blog - Marcus Gustafsson
+Tips and tricks on web design and development, CSS, JavaScript, React and other things.
