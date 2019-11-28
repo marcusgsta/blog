@@ -57,24 +57,24 @@ This way I can use the variables in any (child) element in the document.
 
 ## CSS or SVG?
 
-The background decorations, a couple of simple forms, can be made in a illustrator program as a PNG or SVG. Looking at the shapes, they are very simple, and could be easily made also with the help of some CSS. Lately I have been learning CSS Illustration which has made me more confident with this technique. I am going for CSS.
+The background decorations, a couple of simple forms, can be made in a illustrator program as a PNG or SVG. Looking at the shapes, they are very simple, and could be made also with the help of some CSS. Lately I have been learning CSS Illustration which has made me more confident with this technique. I am trying some CSS techniques first.
 
 There are three rectangles with rounded edges, or perhaps triangles are a better fit, since the sides are not 90 degrees but larger. This is what it looks like:
 
 ![Background Shapes](background-shapes.png)
 
-Ok, let's make some CSS triangles.
 I create a new div with the class of 'shapes'. Since each div can have two extra div:s in the form of the pseudo-elements :before and :after, this is all that is needed for the HTML.
 
-The CSS triangle which uses borders and zero width and height creates a right-angled triangle, I decided instead to use clip-path this time.
-
+The CSS triangle which uses borders and zero width and height creates a right-angled triangle, but I need a wider angle. I also try using clip-path but this doesn't seem to let me do rounded angles.
 
 
 ## SASS Functions to keep it DRY - Don't Repeat Yourself
 
 Since I will be repeating the same shape three times, I could also make use of a CSS function, to reduce repeating lines of code. However, this seems not to be available using CSS only. Since I'd like to delve into writing functions I change my mind and add SCSS anyway.
 
+## SVG
 
+The shapes are overlapping and using opacity, which makes it even more tricky using only CSS. Finally I go for SVG.
 
 
 
