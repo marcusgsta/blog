@@ -61,5 +61,14 @@ The background decorations, a couple of simple forms, can be made in a illustrat
 
 There are three rectangles with rounded edges, or perhaps triangles are a better fit, since the sides are not 90 degrees but larger. This is what it looks like:
 
+![Background Shapes](background-shapes.png)
+
+Ok, let's make some CSS triangles.
+I create a new div with the class of 'shapes'. Since each div can have two extra div:s in the form of the pseudo-elements :before and :after, this is all that is needed for the HTML.
+
+Since I will be repeating the same shape three times, I could also make use of a CSS function, to reduce repeating lines of code. However, this seems not to be available using CSS only. Since I'd like to delve into writing functions I change my mind and add SCSS anyway.
+
+
+
 
 
