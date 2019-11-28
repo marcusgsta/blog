@@ -31,3 +31,6 @@ I plan to recreate the page first, then tweak it a little. Or a lot, we will see
 After marking up everything in semantic HTML ( nav, header, footer, some sections and articles, I am ready to start.
 First thing that would be nice is some color. The background is also logical to start with, since I am thinking in terms of layers, and this is the layer that is at the back of everything.
 
+Using a chrome extension, ColorZilla, which is a color picker, I can easily get the hex code for the background.
+
+![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
