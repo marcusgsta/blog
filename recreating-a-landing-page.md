@@ -141,4 +141,6 @@ body {
             scale(1.3);
 }
 ```
+I also made it reponsive, setting the sized to percentages.
+
 
