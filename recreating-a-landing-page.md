@@ -33,4 +33,4 @@ First thing that would be nice is some color. The background is also logical to 
 
 Using a chrome extension, ColorZilla, which is a color picker, I can easily get the hex code for the background.
 
-![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
+![Colorzilla chrome Extension](https://marcusgsta.github.com/blog/colorzilla.png)
