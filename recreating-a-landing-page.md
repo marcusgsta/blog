@@ -59,5 +59,7 @@ This way I can use the variables in any (child) element in the document.
 
 The background decorations, a couple of simple forms, can be made in a illustrator program as a PNG or SVG. Looking at the shapes, they are very simple, and could be easily made also with the help of some CSS. Lately I have been learning CSS Illustration which has made me more confident with this technique. I am going for CSS.
 
+There are three rectangles with rounded edges, or perhaps triangles are a better fit, since the sides are not 90 degrees but larger. This is what it looks like:
+
 
 
