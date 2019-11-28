@@ -33,4 +33,4 @@ First thing that would be nice is some color. The background is also logical to 
 
 Using a chrome extension, [ColorZilla](https://www.colorzilla.com/), which is a color picker and eye dropper tool, I can easily get the hex code for the background.
 
-![Colorzilla Chrome Extension](https://marcusgsta.github.com/blog/colorzilla.png)
+![Colorzilla Chrome Extension](/colorzilla.png)
