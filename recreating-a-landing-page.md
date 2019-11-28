@@ -68,13 +68,77 @@ I create a new div with the class of 'shapes'. Since each div can have two extra
 The CSS triangle which uses borders and zero width and height creates a right-angled triangle, but I need a wider angle. I also try using clip-path but this doesn't seem to let me do rounded angles.
 
 
-## SASS Functions to keep it DRY - Don't Repeat Yourself
+## SASS Mixins to keep it DRY - Don't Repeat Yourself
 
-Since I will be repeating the same shape three times, I could also make use of a CSS function, to reduce repeating lines of code. However, this seems not to be available using CSS only. Since I'd like to delve into writing functions I change my mind and add SCSS anyway.
+Since I will be repeating the same shape three times, I could also make use of a CSS mixin, to reduce repeating lines of code. However, this seems not to be available using CSS only. Since I'd like to delve into writing functions I change my mind from previously and add SCSS preprocessor to my Codepen.
 
 ## SVG
 
 The shapes are overlapping and using opacity, which makes it even more tricky using only CSS. Finally I go for SVG.
 
+It took some time adjusting the SVG shapes with CSS, this is what I got:
 
+![My background shapes in SVG](my-shapes.png)
+
+I used hsla-color, so that I could easily adjust the intensity, lightness and opacity.
+
+The HTML:
+
+```html
+<svg viewbox="-100 0 500 600" id="shapes" xmlns="http://www.w3.org/2000/svg">
+ <g>
+  <path id="shape-one" d="m0.565004,-0.718787l85.767768,69.509633c0,0 20.584272,20.138305 61.752803,1.299244c41.16853,-18.839061 165.531798,-79.253964 165.531784,-79.253975" stroke-width="0"/>
+   <path id="shape-two" d="m0.565004,-0.718787l85.767768,69.509633c0,0 20.584272,20.138305 61.752803,1.299244c41.16853,-18.839061 165.531798,-79.253964 165.531784,-79.253975" stroke-width="0"/>
+   <path id="shape-three" d="m0.565004,-0.718787l85.767768,69.509633c0,0 20.584272,20.138305 61.752803,1.299244c41.16853,-18.839061 165.531798,-79.253964 165.531784,-79.253975" stroke-width="0"/>
+ </g>
+</svg>
+```
+The CSS, using SCSS @mixin and @include to reduce amount of code.:
+
+```css
+:root {
+  --background: #EDF4F7;
+  --bg-shape1: hsla(196, 85%, 86%, 0.4);
+  --bg-shape2: hsla(196, 95%, 84%, 0.4);
+  --bg-shape3: hsla(196, 95%, 84%, 0.4);
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: var(--background);
+  z-index:-10;
+}
+
+@mixin style-shape($top, $left, $color, $width,$height) {
+  position: absolute;
+  top: $top;
+  left:$left;
+  width:$width;
+  height:$height;
+  fill:$color;
+  z-index:-5;
+}
+
+#shapes {
+  width:100%;
+  height:100%;
+}
+#shape-one {
+  @include style-shape(30px, 0, var(--bg-shape1), 100%, 100%);
+  transform:translateY(2px) translateX(-30px) scale(1.2);
+}
+#shape-two {
+   @include style-shape(-50px, 0, var(--bg-shape2), 100%, 100%);
+  transform:translateY(-20px)
+            translateX(20px);
+}
+#shape-three {
+   @include style-shape(-50px, 0, var(--bg-shape3), 100%, 100%);
+  transform:translateY(-10px)
+            translateX(150px)
+            scale(1.3);
+}
+```
 
