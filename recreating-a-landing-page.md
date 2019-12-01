@@ -144,7 +144,7 @@ body {
 I also made it reponsive, setting the sized to percentages.
 
 ## The Menu
-Starting with the menu button for a mobile sized screen, I put some color, border-radius and a CSS triangle. It also needed some JavaScript. The tricky part was to hide the menu when clicking outside of the menu.
+Starting with the menu button for a mobile sized screen, I put some color, border-radius and a little triangle icon that was part of the font. It also needed some JavaScript. The tricky part was to hide the menu when clicking outside of the menu.
 
 ```javascript
 let menuBtn = document.querySelector('#menu-btn');
@@ -192,7 +192,9 @@ menuOptions.addEventListener("mouseout", outlineMenu)
 I also added some extra funcionality: an outline on the menu items when the mouse leaves them. This was fixed with the events mouseover and mouseout. Finally I got a menu that could be shown and hidden on mouseclick.
 
 
+## Main Layout
 
+I like to use Flexbox since it was made for responsive sites. I set the main-element to display:flex.
 
 
 
