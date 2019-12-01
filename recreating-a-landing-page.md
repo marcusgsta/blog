@@ -143,4 +143,56 @@ body {
 ```
 I also made it reponsive, setting the sized to percentages.
 
+## The Menu
+Starting with the menu button for a mobile sized screen, I put some color, border-radius and a CSS triangle. It also needed some JavaScript. The tricky part was to hide the menu when clicking outside of the menu.
+
+```javascript
+let menuBtn = document.querySelector('#menu-btn');
+let menuOptions = document.querySelector('#menu-options');
+let workShopLink = document.getElementById('workshop');
+
+
+function closeMenu(e) {    
+ if (e.target != menuBtn && menuOptions.style.display === "block") {
+  menuOptions.style.display = "none";   
+ }
+ document.body.removeEventListener("click", closeMenu);
+}
+
+function showHideMenu(e) {
+    console.log(menuOptions.style.display)
+    if ( menuOptions.style.display === "none" || menuOptions.style.display === "") {
+        menuOptions.style.display = "block";
+        menuOptions.style.outline = "none";
+        workShopLink.focus();
+        // add click event for body
+        document.body.addEventListener("click", closeMenu, true);
+    } else {
+        menuOptions.style.display = "none";
+    }
+}
+
+menuBtn.addEventListener("click", showHideMenu);
+
+
+workShopLink.addEventListener("mouseover", function() {
+  workShopLink.blur();
+});
+
+function outlineMenu() {
+    menuOptions.style.outline = "3px solid dodgerblue";
+}
+function blurMenu() {
+    menuOptions.style.outline = "none";
+}
+
+menuOptions.addEventListener("mouseover", blurMenu);
+menuOptions.addEventListener("mouseout", outlineMenu)
+```
+I also added some extra funcionality: an outline on the menu items when the mouse leaves them. This was fixed with the events mouseover and mouseout. Finally I got a menu that could be shown and hidden on mouseclick.
+
+
+
+
+
 
