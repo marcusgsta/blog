@@ -179,17 +179,29 @@ workShopLink.addEventListener("mouseover", function() {
   workShopLink.blur();
 });
 
-function outlineMenu() {
-    menuOptions.style.outline = "3px solid dodgerblue";
+function focusMenu() {
+    menuOptions.classList.add("focused");
 }
 function blurMenu() {
-    menuOptions.style.outline = "none";
+    menuOptions.classList.remove("focused");
 }
 
 menuOptions.addEventListener("mouseover", blurMenu);
-menuOptions.addEventListener("mouseout", outlineMenu)
+menuOptions.addEventListener("mouseout", focusMenu);
+
 ```
-I also added some extra funcionality: an outline on the menu items when the mouse leaves them. This was fixed with the events mouseover and mouseout. Finally I got a menu that could be shown and hidden on mouseclick.
+I also added some extra functionality: an outline on the menu items when the mouse leaves them. This was fixed with the events mouseover and mouseout. Finally I got a menu that could be shown and hidden on mouseclick.
+
+## Box Shadow for :focus
+
+This handy trick I got from Kevin Powell !(Box Shadow for :focus)[https://youtu.be/Mvu5OMGcdVA], that made it possible to get rounded edges, something that is not possible with the outline property.
+```
+  .focused {
+      box-shadow:0 0 0 2px var(--background),
+                 0 0 0 5px dodgerblue;
+  }
+```
+The .focused class is added on the mouseout event. It utilizes 2 box shadows on top of each other to get a nice rounded frame.
 
 
 ## Main Layout
