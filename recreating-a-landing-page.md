@@ -38,16 +38,19 @@ I use SASS but I would like to try out using native CSS custom properties.
 
 - - -
 
+
 ## Semantic HTML
 
 After marking up everything in semantic HTML ( nav, header, footer, main, some sections and articles, I am ready to start.
 First thing that would be nice is some color. The background is also logical to start with, since I am thinking in terms of layers, and this is the layer that is at the back of everything.
+
 
 ## Colorzilla
 
 Using a chrome extension, [ColorZilla](https://www.colorzilla.com/), which is a color picker and eye dropper tool, I can get the color code for the background.
 
 ![Colorzilla Chrome Extension](/colorzilla.png)
+
 
 ## CSS Custom Properties
 
@@ -63,6 +66,7 @@ body {
 }
 ```
 This way I can use the variables in any (child) element in the document.
+
 
 ## CSS or SVG?
 
@@ -80,6 +84,7 @@ The CSS triangle which uses borders and zero width and height creates a right-an
 ## SASS Mixins to not repeat code
 
 Since I will be repeating the same shape three times, I could also make use of a SASS mixin, to reduce repeating lines of code. However, this seems not to be available using CSS only. Since I'd like to delve into writing functions I change my mind from previously and add SCSS preprocessor to my Codepen.
+
 
 ## SVG
 
@@ -102,6 +107,7 @@ The HTML:
  </g>
 </svg>
 ```
+
 The CSS, using SCSS @mixin and @include to reduce amount of code.:
 
 ```css
@@ -150,9 +156,12 @@ body {
             scale(1.3);
 }
 ```
-I also made it reponsive, setting the sizes to percentages.
+
+I also made it responsive, setting the sizes to percentages.
+
 
 ## Responsive Menu
+
 Starting with the menu button for a mobile sized screen, I put some color, border-radius and a little triangle icon that was part of the font. It also needed some JavaScript. The tricky part was to hide the menu when clicking outside of the menu.
 
 ```javascript
@@ -199,7 +208,9 @@ menuOptions.addEventListener("mouseover", blurMenu);
 menuOptions.addEventListener("mouseout", focusMenu);
 
 ```
-I also added some extra functionality: an outline on the menu items when the mouse leaves them. This was fixed with the events mouseover and mouseout. Finally I got a menu that could be shown and hidden on mouseclick.
+
+I added some extra functionality: an outline on the menu items when the mouse leaves them. This was fixed with the events mouseover and mouseout. Finally I got a menu that could be shown and hidden on mouseclick.
+
 
 ## Box Shadow for focus
 
@@ -210,7 +221,9 @@ This handy trick I got from Kevin Powell [Box Shadow for :focus](https://youtu.b
                  0 0 0 5px dodgerblue;
   }
 ```
+
 The .focused class is added on the mouseout event. It utilizes 2 box shadows on top of each other to get a nice rounded frame.
+
 
 ## The React Training Logo in CSS
 
@@ -290,6 +303,7 @@ The spacing in ems follows its parent's font-size, and ofcourse one needs to be 
 
 I think the page looks so much better with consistent spacing.
 
+
 ## CSS Card
 
 I experimented with box shadow for the card, and got it allright, but finally I had a look at the original one. This one gives a subtle shadow:
@@ -323,6 +337,7 @@ Flexbox was invaluable for the layout design. With `display:flex` I could for ex
 ```
 
 `justify-content: center` centers items vertically.
+
 ![View for large screen sizes](large_screen.png)
 
 It also turned out to be a challenge centering an unordered list. Finally flexbox made it super simple. It seems to be the goto solution nowadays.
@@ -363,6 +378,7 @@ For the footer I used CSS grid, because I wanted the social media icons to be at
 ![Footer with CSS Grid](footer.png)
 
 To vertically center the mail address, using CSS Grid, I needed `align-self: center`. 
+
 
 ## Conclusion
 
