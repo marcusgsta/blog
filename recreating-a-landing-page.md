@@ -245,7 +245,7 @@ Flexbox was invaluable for the layout design. With display:flex I could for exam
 }
 ```
 `justify-content: center` centers items vertically.
-!(large_screen.png)
+![View for large screen sizes](large_screen.png)
 
 For the footer I used CSS grid, because I wanted the social media icons to be at the left side, and the mail address link to be in the middle. This was solved by a three column layout, where the middle columns set to `auto`:
 ```
@@ -279,7 +279,7 @@ For the footer I used CSS grid, because I wanted the social media icons to be at
 }
 ```
 
-!(footer.png)
+![Footer with CSS Grid](footer.png)
 
 
 
