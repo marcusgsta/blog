@@ -199,6 +199,68 @@ This handy trick I got from Kevin Powell [Box Shadow for :focus](https://youtu.b
 ```
 The .focused class is added on the mouseout event. It utilizes 2 box shadows on top of each other to get a nice rounded frame.
 
+## The React Training Logo
+
+For some CSS fun I recreated this logo with pure CSS. It is not identical, but looks pretty good I think.
+
+```
+    // DRAWING REACT TRAINING LOGO WITH CSS
+    #logo {
+        position:relative;
+        display:inline-block;
+        top:0;
+        left:0;
+        margin-right:1.5em;
+        width:100px;
+        height:100px;
+        background-color:var(--black);
+        border-radius:50%;
+        background:radial-gradient(circle at center, #fff 0, #fff 12%, var(--black) 13%);
+        z-index:100;
+        #inner-ellipse-one {
+            // oval
+            z-index:-10;
+            position:absolute;
+            top:32px;
+            left:5px;
+            width:80px;
+            height:30px;
+            border:4px solid var(--red);
+            border-radius:50%;
+            transform:rotate(120deg);
+        }
+        &:before {
+            // oval
+            content:"";
+            position:absolute;
+            top:31px;
+            left:6px;
+            width:80px;
+            height:30px;
+            background-color:transparent;
+            border:4px solid #fff;
+            border-radius:50%;
+        }
+        &:after {
+            // oval
+            content:"";
+            position:absolute;
+            top:31px;
+            left:6px;
+            width:80px;
+            height:30px;
+            background-color:transparent;
+            border:4px solid var(--grey);
+            border-radius:50%;
+            transform:rotate(60deg);
+        }
+    }
+```
+The result:
+
+![My version of the logo](react-training-logo.png)
+
+
 ## Consistent spacing with ems and rems 
 
 I wanted to get consistent spacing throughout the page, and I felt I needed a better understanding of ems and rems. Again a video by [Kevin](https://www.youtube.com/watch?v=_-aDOAMmDHI) came to the rescue.
