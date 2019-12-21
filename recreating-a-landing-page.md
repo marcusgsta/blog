@@ -247,6 +247,8 @@ Flexbox was invaluable for the layout design. With `display:flex` I could for ex
 `justify-content: center` centers items vertically.
 ![View for large screen sizes](large_screen.png)
 
+It also turned out to be a challenge centering an unordered list. Finally flexbox made it super simple. It seems to be the goto solution nowadays.
+
 For the footer I used CSS grid, because I wanted the social media icons to be at the left side, and the mail address link to be in the middle. This was solved by a three column layout, where the middle columns set to `auto`:
 
 ```
@@ -297,6 +299,12 @@ This was a very valuable lesson, which I will use again. A base font-size, and e
 ### Menu 
 
 It was fun to make a responsive menu from scratch, using some JavaScript. However, recently I came across the [radio-button hack](https://www.youtube.com/watch?v=8QKOaTYvYUA), which I now prefer for its simplicity.
+
+### Other lessons learned
+
+I recommend remaking websites after your own head, it is a great way to learn. I feel more confident now in how to put up a professional looking website without the use of frameworks. It definitealy sharpened my CSS skills. Also, CSS illustration have taught me a great deal, but it is not the same as making websites, since in CSS illustration one mostly uses absolute positioning and set pixel sizes for convenience. Making a website responsive is something else and needs special knowledge, such as consistent spacing by knowing how to use ems and rems, media queries for different screen sizes and proper use of CSS Grid and flexbox. 
+
+Hope my work was valuable to you in some way. Please leave a like if it did, or make a comment below on how one could improve the design. Til next time, happy coding :) 
 
 
 
