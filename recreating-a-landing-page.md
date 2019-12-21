@@ -5,6 +5,8 @@ To practice CSS I decided to recreate this page: [React Training](https://reactt
 It is a rather simple page but it is also elegant and responsive in a way that I would like to practice
 and study on a deeper level.
 
+My result, a simplified and responsive version can be found here: [Codepen: Recreating a Landing Page](https://codepen.io/marcusgsta/pen/bGNWGLJ)
+
 I divided my work into these parts:
 + Responsive menu
 + Background shapes and logo remade in CSS
@@ -259,6 +261,9 @@ For some CSS fun I recreated this logo with pure CSS. It is not identical, but l
 The result:
 
 ![My version of the logo](react-training-logo.png)
+
+Original version:
+![Original version of logo](react-training-logo.png)
 
 
 ## Consistent spacing with ems and rems 
