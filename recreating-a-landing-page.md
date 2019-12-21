@@ -204,7 +204,7 @@ I also added some extra functionality: an outline on the menu items when the mou
 ## Box Shadow for focus
 
 This handy trick I got from Kevin Powell [Box Shadow for :focus](https://youtu.be/Mvu5OMGcdVA), that made it possible to get rounded edges, something that is not possible with the outline property.
-```
+```css
   .focused {
       box-shadow:0 0 0 2px var(--background),
                  0 0 0 5px dodgerblue;
@@ -216,7 +216,7 @@ The .focused class is added on the mouseout event. It utilizes 2 box shadows on 
 
 For some CSS fun I recreated this logo with pure CSS. It is not identical, but looks pretty good I think.
 
-```
+```css
     // DRAWING REACT TRAINING LOGO WITH CSS
     #logo {
         position:relative;
@@ -294,7 +294,7 @@ I think the page looks so much better with consistent spacing.
 
 I experimented with box shadow for the card, and got it allright, but finally I had a look at the original one. This one gives a subtle shadow:
 
-```
+```css
 box-shadow: 0px 2px 10px hsla(0,0%,0%,0.15);
 ```
 Horisontal offset of 0, a very subtle vertical offset of 2px, and a blur of 10px. Color is black with 0.15 opacity.
@@ -304,7 +304,7 @@ Horisontal offset of 0, a very subtle vertical offset of 2px, and a blur of 10px
 
 Flexbox was invaluable for the layout design. With `display:flex` I could for example change the order of the sections on large screens:
 
-```
+```css
 @media (min-width: 790px) {
     #flash {
       display:flex;
@@ -320,7 +320,7 @@ Flexbox was invaluable for the layout design. With `display:flex` I could for ex
       order:1;
     }
 }
-```
+```css
 `justify-content: center` centers items vertically.
 ![View for large screen sizes](large_screen.png)
 
@@ -328,7 +328,7 @@ It also turned out to be a challenge centering an unordered list. Finally flexbo
 
 For the footer I used CSS grid, because I wanted the social media icons to be at the left side, and the mail address link to be in the middle. This was solved by a three column layout, where the middle columns set to `auto`:
 
-```
+```css
 #extra-footer {
     padding:1em;
     background: #333333;
