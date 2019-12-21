@@ -1,19 +1,28 @@
 # Recreating a Landing Page
 
-To practice CSS I decided to recreate this page: [React Training](https://reacttraining.com/courses//images/blue-fade.svg).
+To practice CSS I decided to recreate a website. Recently the site has been updated but here is a screenshot of the old one: 
+
+![React Training Screenshot](react-training-screenshot.png)
 
 It is a rather simple page but it is also elegant and responsive in a way that I would like to practice
 and study on a deeper level.
 
 My result, a simplified and responsive version can be found here: [Codepen: Recreating a Landing Page](https://codepen.io/marcusgsta/pen/bGNWGLJ)
 
-I divided my work into these parts:
-+ Responsive menu
-+ Background shapes and logo remade in CSS
-+ Consistent margins
-+ Card
-+ CSS variables
-+ Footer
+I divided my work into smaller parts. Here are some main points and lessons learned:
+
++ [Semantic HTML](#semantic-html)
++ ColorZilla
++ CSS Custom Properties
++ CSS or SVG?
++ SASS Mixins to not repeat code
++ SVG
++ Responsive Menu
++ Box Shadow for :focus
++ React Training Logo in CSS
++ Consistent spacing with ems and rems 
++ CSS Card
++ Layout and centering with Flexbox and CSS Grid
 + Conclusion
 
 The webpage is organized in blocks or cards which is good for responsiveness, since they can be moved around
@@ -38,7 +47,7 @@ Using a chrome extension, [ColorZilla](https://www.colorzilla.com/), which is a 
 
 ![Colorzilla Chrome Extension](/colorzilla.png)
 
-## CSS Variables
+## CSS Custom Properties
 
 Since CSS Custom Properties (variables) inherit the value from its parent, I set my background-color to the :root pseudo class. This class is identical to the html element but its specificity is higher and therefore good for when setting CSS variables.
 
@@ -201,7 +210,7 @@ This handy trick I got from Kevin Powell [Box Shadow for :focus](https://youtu.b
 ```
 The .focused class is added on the mouseout event. It utilizes 2 box shadows on top of each other to get a nice rounded frame.
 
-## The React Training Logo
+## The React Training Logo in CSS
 
 For some CSS fun I recreated this logo with pure CSS. It is not identical, but looks pretty good I think.
 
