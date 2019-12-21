@@ -5,8 +5,6 @@ To practice CSS I decided to recreate this page: [React Training](https://reactt
 It is a rather simple page but it is also elegant and responsive in a way that I would like to practice
 and study on a deeper level.
 
-I imagine these React guys know what they are doing.
-
 It contains some common parts of a web page:
 + a hamburger menu
 + header area with logo icon, text logo and subheading
@@ -194,7 +192,7 @@ I also added some extra functionality: an outline on the menu items when the mou
 
 ## Box Shadow for :focus
 
-This handy trick I got from Kevin Powell !(Box Shadow for :focus)[https://youtu.be/Mvu5OMGcdVA], that made it possible to get rounded edges, something that is not possible with the outline property.
+This handy trick I got from Kevin Powell ![Box Shadow for :focus](https://youtu.be/Mvu5OMGcdVA), that made it possible to get rounded edges, something that is not possible with the outline property.
 ```
   .focused {
       box-shadow:0 0 0 2px var(--background),
