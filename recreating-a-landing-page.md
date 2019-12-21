@@ -20,7 +20,7 @@ I divided my work into smaller parts. Here are some main points and lessons lear
 + [SASS Mixins to not repeat code](#sass-mixins-to-not-repeat-code)
 + [SVG](#svg)
 + [Responsive Menu](#responsive-menu)
-+ [Box Shadow for :focus](#box-shadow-for-:focus)
++ [Box Shadow for :focus](#box-shadow-for-focus)
 + [The React Training Logo in CSS](#the-react-training-logo-in-css)
 + [Consistent spacing with ems and rems](#consistent-spacing-with-ems-and-rems)
 + [CSS Card](#css-card)
@@ -201,7 +201,7 @@ menuOptions.addEventListener("mouseout", focusMenu);
 ```
 I also added some extra functionality: an outline on the menu items when the mouse leaves them. This was fixed with the events mouseover and mouseout. Finally I got a menu that could be shown and hidden on mouseclick.
 
-## Box Shadow for :focus
+## Box Shadow for focus
 
 This handy trick I got from Kevin Powell [Box Shadow for :focus](https://youtu.be/Mvu5OMGcdVA), that made it possible to get rounded edges, something that is not possible with the outline property.
 ```
