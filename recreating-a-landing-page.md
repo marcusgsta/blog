@@ -365,6 +365,8 @@ To vertically center the mail address, using CSS Grid, I needed `align-self: cen
 
 ## Conclusion
 
+Some things I have learned from remaking a website.
+
 ### CSS vs SCSS variables
 
 I like that I can use CSS custom properties and exclude the need for a CSS preprocessor like SASS. The thing I miss with SASS variables is the functions I can use with them, like lighten(), darken() which can be really handy for tweaking color schemes right in the editor. The thing is that even if I have SASS installed, I can't tweak the CSS custom properties. If I want that functionality I need to write SASS variables ($red).
@@ -379,7 +381,9 @@ It was fun to make a responsive menu from scratch, using some JavaScript. Howeve
 
 ### Other lessons learned
 
-I recommend remaking websites after your own head, it is a great way to learn. I feel more confident now in how to put up a professional looking website without the use of frameworks. It definitealy sharpened my CSS skills. Also, CSS illustration have taught me a great deal, but it is not the same as making websites, since in CSS illustration one mostly uses absolute positioning and set pixel sizes for convenience. Making a website responsive is something else and needs special knowledge, such as consistent spacing by knowing how to use ems and rems, media queries for different screen sizes and proper use of CSS Grid and flexbox. 
+I recommend remaking websites after your own head, it is a great way to learn. It's fun to make a whole page and get a better sense of how all the different parts can be put together. I feel more confident now in how to put up a professional looking website without the use of frameworks. It definitely sharpened my CSS skills.
+
+Another point I would like to make is that CSS illustration have taught me a great deal, but it is not the same as making websites. In CSS illustration one mostly uses absolute positioning and set pixel sizes for convenience. Making a website responsive is something else and needs special knowledge, such as consistent spacing by knowing how to use ems and rems, media queries for different screen sizes and proper use of CSS Grid and flexbox. 
 
 Hope my work was valuable to you in some way. Please leave a like if it did, or make a comment below on how one could improve the design. Til next time, happy coding :) 
 
