@@ -199,14 +199,42 @@ This handy trick I got from Kevin Powell [Box Shadow for :focus](https://youtu.b
 ```
 The .focused class is added on the mouseout event. It utilizes 2 box shadows on top of each other to get a nice rounded frame.
 
+## Consistent spacing with ems and rems 
 
-## Main Layout
+I wanted to get consistent spacing throughout the page, and I felt I needed a better understanding of ems and rems. Again a video by [Kevin](https://www.youtube.com/watch?v=_-aDOAMmDHI) came to the rescue.
 
-I like to use Flexbox since it was made for responsive sites. I set the main-element to display:flex.
+So, the background is that *em* is a unit of measurement in typography and traditionally defined as the width of the uppercase M in the current face and point size. In CSS *em* is relative to the font-size of its direct or nearest parent, while *rem*, or root em, relates to the font-size of the html(root) font-size in the document.
 
+We can use this to style margins and paddings. I first set the base font-size to 16 pixels in the HTML element. Then I let all margins and padding be either 1, 1.5, 2, or a different number of ems. It turned out to be way easier to control the spacing this way, than using pixels.
+
+The good thing about it is that if I change the base font-size, all the spacing will change too, in a consistent way.
+
+The spacing in ems follows its parent's font-size, and ofcourse one needs to be careful and not nest font-sizes, because they will compound. In cases where I had a special element, like a button, I chose to use rem instead, to avoid this problem. The font-sizes in rem relates directly to the html font-size.
+
+I think the page looks so much better with consistent spacing.
+
+## CSS Card
+
+I experimented with box shadow for the card, and got it allright, but finally I had a look at the original one. This one gives a subtle shadow:
+
+```
+box-shadow: 0px 2px 10px hsla(0,0%,0%,0.15);
+```
+Horisontal offset of 0, Vertical offset of 2px, and a blur of 10px. Color is black with 0.15 opacity.
+
+
+## Centering with Flexbox and CSS Grid
+
+## Footer
 
 
 ## Conclusion
 
-+ CSS vs SCSS variables
+### CSS vs SCSS variables
+
 I like that I can use CSS custom properties and exclude the need for a CSS preprocessor like SASS. The thing I miss with SASS variables is the functions I can use with them, like lighten(), darken() which can be really handy for tweaking color schemes right in the editor. The thing is that even if I have SASS installed, I can't tweak the CSS custom properties. If I want that functionality I need to write SASS variables ($red).
+
+### Consistent spacing
+
+This was a very valuable lesson, which I will use again. A base font-size, and ems for margins and padding, makes the page look much better and balanced in all of its spacing.
+
