@@ -192,7 +192,7 @@ I also added some extra functionality: an outline on the menu items when the mou
 
 ## Box Shadow for :focus
 
-This handy trick I got from Kevin Powell ![Box Shadow for :focus](https://youtu.be/Mvu5OMGcdVA), that made it possible to get rounded edges, something that is not possible with the outline property.
+This handy trick I got from Kevin Powell [Box Shadow for :focus](https://youtu.be/Mvu5OMGcdVA), that made it possible to get rounded edges, something that is not possible with the outline property.
 ```
   .focused {
       box-shadow:0 0 0 2px var(--background),
