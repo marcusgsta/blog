@@ -21,8 +21,8 @@ I divided my work into smaller parts. Here are some main points and lessons lear
 + [SVG](#svg)
 + [Responsive Menu](#responsive-menu)
 + [Box Shadow for :focus](#box-shadow-for-:focus)
-+ [React Training Logo in CSS](#react-training-logo-in-css)
-+ [Consistent spacing with ems and rems ](#consistent-spacing-with-ems-and-rems)
++ [The React Training Logo in CSS](#the-react-training-logo-in-css)
++ [Consistent spacing with ems and rems](#consistent-spacing-with-ems-and-rems)
 + [CSS Card](#css-card)
 + [Layout and centering with Flexbox and CSS Grid](#layout-and-centering-with-flexbox-and-css-grid)
 + [Conclusion](#conclusion)
@@ -152,7 +152,7 @@ body {
 ```
 I also made it reponsive, setting the sizes to percentages.
 
-## The Menu
+## Responsive Menu
 Starting with the menu button for a mobile sized screen, I put some color, border-radius and a little triangle icon that was part of the font. It also needed some JavaScript. The tricky part was to hide the menu when clicking outside of the menu.
 
 ```javascript
