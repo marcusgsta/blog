@@ -1,6 +1,8 @@
 # Recreating a Landing Page
 
-To practice CSS I decided to recreate a website. Recently the site has been updated but here is a screenshot of the old one: 
+To practice CSS I decided to recreate a website.
+
+Recently the site has been updated but here is a screenshot of the old one: 
 
 ![React Training Screenshot](react-training-screenshot.png)
 
@@ -12,18 +14,18 @@ My result, a simplified and responsive version can be found here: [Codepen: Recr
 I divided my work into smaller parts. Here are some main points and lessons learned:
 
 + [Semantic HTML](#semantic-html)
-+ ColorZilla
-+ CSS Custom Properties
-+ CSS or SVG?
-+ SASS Mixins to not repeat code
-+ SVG
-+ Responsive Menu
-+ Box Shadow for :focus
-+ React Training Logo in CSS
-+ Consistent spacing with ems and rems 
-+ CSS Card
-+ Layout and centering with Flexbox and CSS Grid
-+ Conclusion
++ [ColorZilla](#colorzilla)
++ [CSS Custom Properties](#css-custom-properties)
++ [CSS or SVG?](#css-or-svg)
++ [SASS Mixins to not repeat code](#sass-mixins-to-not-repeat-code)
++ [SVG](#svg)
++ [Responsive Menu](#responsive-menu)
++ [Box Shadow for :focus](#box-shadow-for-:focus)
++ [React Training Logo in CSS](#react-training-logo-in-css)
++ [Consistent spacing with ems and rems ](#consistent-spacing-with-ems-and-rems)
++ [CSS Card](#css-card)
++ [Layout and centering with Flexbox and CSS Grid](#layout-and-centering-with-flexbox-and-css-grid)
++ [Conclusion](#conclusion)
 
 The webpage is organized in blocks or cards which is good for responsiveness, since they can be moved around
 without messing up the page.
@@ -271,8 +273,7 @@ The result:
 
 ![My version of the logo](react-training-logo.png)
 
-Original version:
-![Original version of logo](react-training-logo.png)
+To make a more exact copy, I would use an SVG-editor.
 
 
 ## Consistent spacing with ems and rems 
