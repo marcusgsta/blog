@@ -5,25 +5,23 @@ To practice CSS I decided to recreate this page: [React Training](https://reactt
 It is a rather simple page but it is also elegant and responsive in a way that I would like to practice
 and study on a deeper level.
 
-It contains some common parts of a web page:
-+ a hamburger menu
-+ header area with logo icon, text logo and subheading
-+ Call to Action button
-+ Tagline
+I divided my work into these parts:
++ Responsive menu
++ Background shapes and logo remade in CSS
++ Consistent margins
++ Card
++ CSS variables
 + Footer
-+ Extra footer with copywrite info
++ Conclusion
 
-It is organized in blocks or cards which is good for responsiveness, since they can be moved around
+The webpage is organized in blocks or cards which is good for responsiveness, since they can be moved around
 without messing up the page.
 
 It also uses some subtle background forms for decoration.
 
-So, let's get started. Mobile first, so I shrink it in a separate window of Chrome and then work from Codepen
-in another window. I will first create the page without looking at the source code, since that feels like cheating.
+So, let's get started. Mobile first, so I shrink it in a separate window of Chrome. I will first create the page without looking at the source code, since I am doing this to learn and to figure out solutions for myself.
 
-Usually I use SCSS but this page is so simple. I also would like to try out using native CSS variables. Why cross the river to fetch water, as they say in Sweden.
-
-I plan to recreate the page first, then tweak it a little. Or a lot, we will see.
+I use SASS but I would like to try out using native CSS custom properties.
 
 - - -
 
@@ -34,7 +32,7 @@ First thing that would be nice is some color. The background is also logical to 
 
 ## Colorzilla
 
-Using a chrome extension, [ColorZilla](https://www.colorzilla.com/), which is a color picker and eye dropper tool, I can easily get the hex code for the background.
+Using a chrome extension, [ColorZilla](https://www.colorzilla.com/), which is a color picker and eye dropper tool, I can get the color code for the background.
 
 ![Colorzilla Chrome Extension](/colorzilla.png)
 
@@ -55,7 +53,7 @@ This way I can use the variables in any (child) element in the document.
 
 ## CSS or SVG?
 
-The background decorations, a couple of simple forms, can be made in a illustrator program as a PNG or SVG. Looking at the shapes, they are very simple, and could be made also with the help of some CSS. Lately I have been learning CSS Illustration which has made me more confident with this technique. I am trying some CSS techniques first.
+The background decorations, a couple of simple forms, can be made in a illustrator program as a PNG or SVG. Looking at the shapes, they are very simple, and could also be made with the help of some CSS. It's time to put my CSS knowledge to use.
 
 There are three rectangles with rounded edges, or perhaps triangles are a better fit, since the sides are not 90 degrees but larger. This is what it looks like:
 
@@ -66,19 +64,19 @@ I create a new div with the class of 'shapes'. Since each div can have two extra
 The CSS triangle which uses borders and zero width and height creates a right-angled triangle, but I need a wider angle. I also try using clip-path but this doesn't seem to let me do rounded angles.
 
 
-## SASS Mixins to keep it DRY - Don't Repeat Yourself
+## SASS Mixins to not repeat code
 
-Since I will be repeating the same shape three times, I could also make use of a CSS mixin, to reduce repeating lines of code. However, this seems not to be available using CSS only. Since I'd like to delve into writing functions I change my mind from previously and add SCSS preprocessor to my Codepen.
+Since I will be repeating the same shape three times, I could also make use of a SASS mixin, to reduce repeating lines of code. However, this seems not to be available using CSS only. Since I'd like to delve into writing functions I change my mind from previously and add SCSS preprocessor to my Codepen.
 
 ## SVG
 
-The shapes are overlapping and using opacity, which makes it even more tricky using only CSS. Finally I go for SVG.
+The shapes are overlapping and using opacity, which makes it even more tricky using only CSS. Finally I go for SVG, using an [editor](https://svg-edit.github.io/svgedit/releases/svg-edit-2.8.1/svg-editor.html) to draw it and then copy the SVG code.
 
 It took some time adjusting the SVG shapes with CSS, this is what I got:
 
 ![My background shapes in SVG](my-shapes.png)
 
-I used hsla-color, so that I could easily adjust the intensity, lightness and opacity.
+SVG is actually excellent since it is possible to change and tweak the color and size of them with CSS. I used hsla-color, so that I could easily adjust the intensity, lightness and opacity.
 
 The HTML:
 
@@ -139,7 +137,7 @@ body {
             scale(1.3);
 }
 ```
-I also made it reponsive, setting the sized to percentages.
+I also made it reponsive, setting the sizes to percentages.
 
 ## The Menu
 Starting with the menu button for a mobile sized screen, I put some color, border-radius and a little triangle icon that was part of the font. It also needed some JavaScript. The tricky part was to hide the menu when clicking outside of the menu.
@@ -208,3 +206,7 @@ I like to use Flexbox since it was made for responsive sites. I set the main-ele
 
 
 
+## Conclusion
+
++ CSS vs SCSS variables
+I like that I can use CSS custom properties and exclude the need for a CSS preprocessor like SASS. The thing I miss with SASS variables is the functions I can use with them, like lighten(), darken() which can be really handy for tweaking color schemes right in the editor. The thing is that even if I have SASS installed, I can't tweak the CSS custom properties. If I want that functionality I need to write SASS variables ($red).
