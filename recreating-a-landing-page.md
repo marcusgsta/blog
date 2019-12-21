@@ -320,7 +320,8 @@ Flexbox was invaluable for the layout design. With `display:flex` I could for ex
       order:1;
     }
 }
-```css
+```
+
 `justify-content: center` centers items vertically.
 ![View for large screen sizes](large_screen.png)
 
