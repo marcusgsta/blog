@@ -225,7 +225,7 @@ Horisontal offset of 0, a very subtle vertical offset of 2px, and a blur of 10px
 
 ## Layout and centering with Flexbox and CSS Grid
 
-Flexbox was invaluable for the layout design. With display:flex I could for example change the order of the sections on large screens:
+Flexbox was invaluable for the layout design. With `display:flex` I could for example change the order of the sections on large screens:
 
 ```
 @media (min-width: 790px) {
@@ -248,6 +248,7 @@ Flexbox was invaluable for the layout design. With display:flex I could for exam
 ![View for large screen sizes](large_screen.png)
 
 For the footer I used CSS grid, because I wanted the social media icons to be at the left side, and the mail address link to be in the middle. This was solved by a three column layout, where the middle columns set to `auto`:
+
 ```
 #extra-footer {
     padding:1em;
@@ -281,7 +282,7 @@ For the footer I used CSS grid, because I wanted the social media icons to be at
 
 ![Footer with CSS Grid](footer.png)
 
-
+To vertically center the mail address, using CSS Grid, I needed `align-self: center`. 
 
 ## Conclusion
 
@@ -292,4 +293,10 @@ I like that I can use CSS custom properties and exclude the need for a CSS prepr
 ### Consistent spacing
 
 This was a very valuable lesson, which I will use again. A base font-size, and ems for margins and padding, makes the page look much better and balanced in all of its spacing.
+
+### Menu 
+
+It was fun to make a responsive menu from scratch, using some JavaScript. However, recently I came across the [radio-button hack](https://www.youtube.com/watch?v=8QKOaTYvYUA), which I now prefer for its simplicity.
+
+
 
