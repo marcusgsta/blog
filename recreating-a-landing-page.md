@@ -220,12 +220,65 @@ I experimented with box shadow for the card, and got it allright, but finally I 
 ```
 box-shadow: 0px 2px 10px hsla(0,0%,0%,0.15);
 ```
-Horisontal offset of 0, Vertical offset of 2px, and a blur of 10px. Color is black with 0.15 opacity.
+Horisontal offset of 0, a very subtle vertical offset of 2px, and a blur of 10px. Color is black with 0.15 opacity.
 
 
-## Centering with Flexbox and CSS Grid
+## Layout and centering with Flexbox and CSS Grid
 
-## Footer
+Flexbox was invaluable for the layout design. With display:flex I could for example change the order of the sections on large screens:
+
+```
+@media (min-width: 790px) {
+    #flash {
+      display:flex;
+      flex-flow: row wrap;
+      justify-content: center;
+    }
+    #call-to-action {
+      flex-basis:380px;
+      order:2;
+    }
+    #subscription {
+      flex-basis:380px;
+      order:1;
+    }
+}
+```
+`justify-content: center` centers items vertically.
+
+For the footer I used CSS grid, because I wanted the social media icons to be at the left side, and the mail address link to be in the middle. This was solved by a three column layout, where the middle columns set to ´auto´:
+´´´
+#extra-footer {
+    padding:1em;
+    background: #333333;
+    // position of logos and mail-link
+    display:grid;
+    grid-template-columns: 8em auto 8em;
+    a {
+        color: var(--lightgrey);
+    }
+    // social media logos
+    i.fab {
+        font-size:1.5em;
+        &:nth-child(1) {
+            margin-right:0.2em;            
+        }
+        &:hover {
+            color:#fff;
+        }
+    }
+    a.mail-link {
+        text-align:center;
+        // vertically center with css grid:
+        align-self:center;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+´´´
+
+
 
 
 ## Conclusion
