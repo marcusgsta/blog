@@ -4,7 +4,7 @@ To practice CSS I decided to recreate a website.
 
 Recently the site has been updated but here is a screenshot of the old one: 
 
-![React Training Screenshot](react-training-screenshot.png)
+![React Training Screenshot](/images/react-training-screenshot.png)
 
 It is a rather simple page but it is also elegant and responsive in a way that I would like to practice
 and study on a deeper level.
@@ -49,7 +49,7 @@ First thing that would be nice is some color. The background is also logical to 
 
 Using a chrome extension, [ColorZilla](https://www.colorzilla.com/), which is a color picker and eye dropper tool, I can get the color code for the background.
 
-![Colorzilla Chrome Extension](/colorzilla.png)
+![Colorzilla Chrome Extension](/images/colorzilla.png)
 
 
 ## CSS Custom Properties
@@ -74,7 +74,7 @@ The background decorations, a couple of simple forms, can be made in a illustrat
 
 There are three rectangles with rounded edges, or perhaps triangles are a better fit, since the sides are not 90 degrees but larger. This is what it looks like:
 
-![Background Shapes](background-shapes.png)
+![Background Shapes](/images/background-shapes.png)
 
 I create a new div with the class of 'shapes'. Since each div can have two extra div:s in the form of the pseudo-elements :before and :after, this is all that is needed for the HTML.
 
@@ -92,7 +92,7 @@ The shapes are overlapping and using opacity, which makes it even more tricky us
 
 It took some time adjusting the SVG shapes with CSS, this is what I got:
 
-![My background shapes in SVG](my-shapes.png)
+![My background shapes in SVG](/images/my-shapes.png)
 
 SVG is actually excellent since it is possible to change and tweak the color and size of them with CSS. I used hsla-color, so that I could easily adjust the intensity, lightness and opacity.
 
@@ -284,7 +284,7 @@ For some CSS fun I recreated this logo with pure CSS. It is not identical, but l
 ```
 The result:
 
-![My version of the logo](react-training-logo.png)
+![My version of the logo](/images/react-training-logo.png)
 
 To make a more exact copy, I would use an SVG-editor.
 
@@ -338,7 +338,7 @@ Flexbox was invaluable for the layout design. With `display:flex` I could for ex
 
 `justify-content: center` centers items vertically.
 
-![View for large screen sizes](large_screen.png)
+![View for large screen sizes](/images/large_screen.png)
 
 It also turned out to be a challenge centering an unordered list. Finally flexbox made it super simple. It seems to be the goto solution nowadays.
 
@@ -375,7 +375,7 @@ For the footer I used CSS grid, because I wanted the social media icons to be at
 }
 ```
 
-![Footer with CSS Grid](footer.png)
+![Footer with CSS Grid](/images/footer.png)
 
 To vertically center the mail address, using CSS Grid, I needed `align-self: center`. 
 
