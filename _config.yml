@@ -22,8 +22,8 @@ title: Marcus Gustafsson – Blog
 email: marcusgu@icloud.com
 description: >- # this means to ignore newlines until "baseurl:"
   Tips and tricks on web design and development, CSS, JavaScript, React and other things.
-baseurl: "/blog" # the subpath of your site, e.g. /blog
-url: "https://marcusgsta.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://marcusgsta.github.io/blog" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: marcusgu1
 github_username:  marcusgsta
 

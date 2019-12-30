@@ -1,3 +1,8 @@
+---
+layout: post
+title: Recreating a Landing Page
+---
+
 # Recreating a Landing Page
 
 To practice CSS I decided to recreate a website.
